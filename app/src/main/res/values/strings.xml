@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GariSafi.com</string>
+
+
+    <string-array name="fuel">
+        <item>Fuel type</item>
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>Hybrid</item>
+    </string-array>
+
+    <string-array name="transmission">
+        <item>Transmission</item>
+        <item>Automatic</item>
+        <item>Manual</item>
+        <item>Automanual</item>
+        <item>CVT</item>
+    </string-array>
+
+    <string-array name="car_condition">
+        <item>Car condition</item>
+        <item>New</item>
+        <item>Foreign Used</item>
+        <item>Locally Used</item>
+
+    </string-array>
+
+    <string-array name="exterior_color">
+        <item>Exterior color</item>
+        <item>Phone</item>
+        <item>Email</item>
+    </string-array>
+
+
+    <string-array name="budget_from">
+        <item>Price from</item>
+        <item>Ksh 0</item>
+        <item>Ksh 100,000</item>
+        <item>Ksh 250,000</item>
+        <item>Ksh 500,000</item>
+        <item>Ksh 750,000</item>
+        <item>Ksh 1,000,000</item>
+        <item>Ksh 2,500,000</item>
+        <item>Ksh 5,000,000</item>
+        <item>Ksh 7,500,000</item>
+        <item>Ksh 10,000,000</item>
+        <item>Ksh 100,000,000</item>
+
+    </string-array>
+
+
+    <string-array name="budget_to">
+        <item>Price to</item>
+        <item>Ksh 0</item>
+        <item>Ksh 100,000</item>
+        <item>Ksh 250,000</item>
+        <item>Ksh 500,000</item>
+        <item>Ksh 750,000</item>
+        <item>Ksh 1,000,000</item>
+        <item>Ksh 2,500,000</item>
+        <item>Ksh 5,000,000</item>
+        <item>Ksh 7,500,000</item>
+        <item>Ksh 10,000,000</item>
+        <item>Ksh 100,000,000</item>
+
+    </string-array>
+
+    <string-array name="location">
+        <item>Car location</item>
+        <item>Nairobi</item>
+        <item>Mombasa</item>
+        <item>Kisumu</item>
+        <item>Nakuru</item>
+        <item>Eldoret</item>
+        <item>Kehancha</item>
+        <item>Ruiru</item>
+        <item>Kikuyu</item>
+        <item>Kangundo-Tala</item>
+        <item>Malindi</item>
+        <item>Naivasha</item>
+        <item>Kitui</item>
+        <item>Machakos</item>
+        <item>Thika</item>
+        <item>Athi River (Mavoko)</item>
+        <item>Karuri</item>
+        <item>Nyeri</item>
+        <item>Kilifi</item>
+        <item>Garissa</item>
+        <item>Vihiga</item>
+        <item>Mumias</item>
+        <item>Bomet</item>
+        <item>Molo</item>
+        <item>Ngong</item>
+        <item>Kitale</item>
+        <item>Litein</item>
+        <item>Limuru</item>
+        <item>Kericho</item>
+        <item>Kimilili</item>
+        <item>Awasi</item>
+        <item>Kakamega</item>
+        <item>Kapsabet</item>
+        <item>Mariakani</item>
+        <item>Kiambu</item>
+        <item>Mandera</item>
+        <item>Nyamira</item>
+        <item>Mwingi</item>
+        <item>Kisii</item>
+        <item>Wajir</item>
+        <item>Rongo</item>
+        <item>Bungoma</item>
+        <item>Ahero</item>
+        <item>Nandi Hills</item>
+        <item>Makuyu</item>
+        <item>Kapenguria</item>
+        <item>Taveta</item>
+        <item>Narok</item>
+        <item>Ol Kalou</item>
+        <item>Kakuma</item>
+        <item>Webuye</item>
+        <item>Malaba</item>
+        <item>Mbita Point</item>
+        <item>Ukunda</item>
+        <item>Wundanyi</item>
+        <item>Busia</item>
+        <item>Runyenjes</item>
+        <item>Migori</item>
+        <item>Malava</item>
+        <item>Suneka</item>
+        <item>Embu</item>
+        <item>Ogembo</item>
+        <item>Homa Bay</item>
+        <item>Lodwar</item>
+        <item>Kitengela</item>
+        <item>Ukwala</item>
+        <item>Keroka</item>
+        <item>Meru</item>
+        <item>Matuu</item>
+        <item>Oyugis</item>
+        <item>Nyahururu</item>
+        <item>Kipkelion</item>
+        <item>Luanda</item>
+        <item>Nanyuki</item>
+        <item>Maua</item>
+        <item>Mtwapa</item>
+        <item>Isiolo</item>
+        <item>Eldama Ravine</item>
+        <item>Voi</item>
+        <item>Siaya</item>
+        <item>Nyansiongo</item>
+        <item>Londiani</item>
+        <item>Iten/Tambach</item>
+        <item>Chuka</item>
+        <item>Malakisi</item>
+        <item>Juja</item>
+        <item>Ongata Rongai</item>
+        <item>Bondo</item>
+        <item>Moyale</item>
+        <item>Maralal</item>
+        <item>Gilgil</item>
+        <item>Nambale</item>
+        <item>Tabaka</item>
+        <item>Muhoroni</item>
+        <item>Kerugoya/Kutus</item>
+        <item>Ugunja</item>
+        <item>Yala</item>
+        <item>Rumuruti</item>
+        <item>Burnt Forest</item>
+        <item>Maragua</item>
+        <item>Kendu Bay</item>
+    </string-array>
+
+
+    <string-array name="report_ad">
+        <item>select reason for reporting</item>
+        <item>false car information</item>
+        <item>seller is a conman</item>
+        <item>wrong car location</item>
+        <item>unrelated images</item>
+    </string-array>
+
+    <string-array name="body_type">
+        <item>Body type</item>
+        <item>Bus / Mini Bus</item>
+        <item>Lorry / Heavy Machinery / Truck</item>
+        <item>Motorbike / Scooter / TukTuk</item>
+        <item>Saloon / Station Wagon / Hatchback</item>
+        <item>SUV / Large 4x4</item>
+        <item>Van / Mini Van</item>
+    </string-array>
+
+
+    <string name="confirm_message">Please confirm the mobile number you provided below and click \'submit\'\nAn SMS verification code will be sent to the number</string>
+    <string name="confirm_code">A six digit code has been sent to your mobile phone, please enter the code and submit</string>
+    <string name="password"><u>Forgot password?</u></string>
+    <string name="title_activity_reset_password">ResetPassword</string>
+    <string name="confirm_number">To reset your password please enter the mobile number used for the account\nan sms verification code
+will be sent to the number</string>
+    <string name="terms_and_conditions">By clicking <b>\'Create account\'</b>, you agree to the <u>Terms of Service and Private Policy.</u></string>
+    <string name="create_account_here">Don\'t have an account? <u>Create account</u></string>
+    <string name="bad_ad">Find ad this inappropriate ?  <u>Report this ad</u></string>
+    <string name="ad_flaged"><u>This ad was flagged!</u></string>
+
+    Find this inappropriate?
+    <string name="login_dialog_lable">To proceed to your account please, login or create an account with GariSafi.com <u>Create account</u></string>
+
+
+    <string name="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante. Phasellus congue viverra ipsum,
+		in elementum arcu ultricies nec.Morbi tincidunt nisl lacinia, placerat nisi eget, luctus tortor.
+		Morbi efficitur dictum leo, sit amet volutpat lorem sodales nec. Quisque et erat et turpis fringilla condimentum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor vulputate libero vitae iaculis.
+		Curabitur id blandit quam. Praesent massa ante, pulvinar vitae sagittis commodo, scelerisque porttitor eros.
+		Mauris suscipit a enim nec congue. Mauris tristique cursus aliquet. Nunc quis hendrerit nunc. Praesent tristique tellus purus,
+		a pretium ex gravida id. Cras laoreet malesuada nulla, at bibendum metus ultricies a. Fusce eu ornare arcu. Proin ut molestie est.
+		Vestibulum quis vehicula erat. Nam sed tempus nibh. Sed tortor ante, maximus venenatis odio sed, ultricies maximus lectus.
+		Aliquam sed volutpat ligula. Integer bibendum, magna ac lacinia suscipit,
+		risus libero rutrum justo, sed tempus augue tellus eget est. Curabitur convallis augue nisl,
+		id efficitur urna posuere faucibus. Ut sed egestas nulla, eu finibus metus. Nunc a arcu ante.
+		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
+		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
+	</string>
+
+    <string name="report_ad">
+        If you find this ad offensive, misleading or any other false information about the car or the seller,
+        please report this ad to improve the quality of services provided by GariGafi to the GariSafi Community.
+    </string>
+
+    <string name="car_make"><![CDATA[<b><font color=#0000FF>Hello world!</font></b>]]></string>
+
+
+    <string name="slide_1_title">Find Your Car</string>
+    <string name="slide_1_desc">The easiest way to find any car you are looking for</string>
+
+    <string name="slide_2_title">Sell a Car</string>
+    <string name="slide_2_desc">Sell your car in a market of thousands of customers</string>
+
+    <string name="slide_3_title">Join the Community</string>
+    <string name="slide_3_desc">Join the large community of Garisafi and get connected to seller of buyers of cars, car parts and more</string>
+
+    <string name="slide_4_title">Broker Network</string>
+    <string name="slide_4_desc">Access a large network of brokers to help you sell your car</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="title_activity_test">TestActivity</string>
+
+</resources>

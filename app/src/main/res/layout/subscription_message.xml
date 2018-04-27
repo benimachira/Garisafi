@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:textSize="17sp"
+       android:layout_marginBottom="15dp"
+       android:textAppearance="@style/TextAppearance.AppCompat.Title"
+       android:text="Message"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:id="@+id/tv_message"
+        android:textSize="15sp"
+        android:text="To subscribe visit our official website and download our VIP android app"
+        android:paddingLeft="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:layout_marginBottom="15dp">
+
+    </TextView>
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Visit Website"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black" />
+
+
+</LinearLayout>

@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_layout"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawablePadding="5dp"
+                    android:inputType="none"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Account type :" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:text=""
+                    android:focusable="false"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/ed_acc_type"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawablePadding="5dp"
+                    android:inputType="none"
+                    android:text="Country :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:text=""
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/ed_country"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawablePadding="5dp"
+                    android:inputType="none"
+                    android:text="Business name :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/edit"
+                    android:text=""
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/ed_biz_name"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:drawablePadding="5dp"
+                    android:inputType="none"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:text="Business location: "
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/edit"
+                    android:text=""
+                    android:id="@+id/ed_biz_location"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="Phone no. 1 :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:text=""
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:clickable="true"
+                    android:id="@+id/ed_phone1"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:text="Phone no. 2 :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/edit"
+                    android:text=""
+                    android:id="@+id/ed_phone2"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:text="Display phone :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:drawableRight="@drawable/edit"
+                    android:text=""
+                    android:id="@+id/ed_display_phone"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:background="#fff"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:text="Email :"
+                    android:textColor="@color/title_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:padding="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:padding="15dp"
+                    android:text=""
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:id="@+id/ed_email"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/my_button_bg"
+                    android:clickable="true"
+                    android:elevation="4dp"
+                    android:onClick="save_details"
+                    android:layout_margin="30dp"
+                    android:padding="15dp"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:id="@+id/bt_save"
+                    android:fontFamily="@font/roboto_medium"/>
+
+
+
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>

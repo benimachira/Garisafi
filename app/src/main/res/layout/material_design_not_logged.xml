@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context=".controllers.Userlogin">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="4dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:layout_marginBottom="15dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/title_color"
+                android:textStyle="bold"
+                android:fontFamily="@font/roboto_condensed_bold_regular"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:onClick="reset_password"
+                android:layout_marginBottom="40dp"
+                android:paddingTop="5dp"
+                android:text="You are not logged in!" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:layout_height="match_parent">
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="4dp"
+                            android:layout_height="match_parent"
+                            card_view:cardElevation="4dp"
+                            card_view:cardUseCompatPadding="true">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:text="Login"
+                            android:onClick="choose_login"
+                            android:textStyle="bold"
+                            android:elevation="14dp"
+                            android:textSize="12sp"
+                            android:background="@drawable/my_white_button_bg"
+                            android:textColor="@color/font_color" />
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="4dp"
+                            android:layout_height="match_parent"
+                            android:elevation="4dp"
+                            card_view:cardElevation="4dp"
+                            card_view:cardUseCompatPadding="true">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="40dp"
+                            android:text="Join GariSafi"
+                            android:onClick="choose_join"
+                            android:textStyle="bold"
+                            android:padding="3dp"
+                            android:elevation="14dp"
+                            android:textSize="12sp"
+                            android:background="@drawable/my_button_bg"
+                            android:textColor="@color/white" />
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
+    </ScrollView>

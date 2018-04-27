@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/my_layout_loading"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/title_color"
+                android:layout_marginTop="35dp"
+                android:onClick="reset_password"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Setting some thing up.." />
+
+
+            <com.github.silvestrpredko.dotprogressbar.DotProgressBar
+                android:id="@+id/dot_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                custom:amount="7"
+                custom:duration="@android:integer/config_mediumAnimTime"
+                custom:endColor="@color/colorAccentLight"
+                custom:startColor="@color/colorPrimary"
+                custom:animationDirection="right"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/font_color"
+                android:onClick="reset_password"
+                android:fontFamily="@font/roboto_regular"
+                android:layout_marginBottom="50dp"
+                android:paddingTop="5dp"
+                android:text="\nPlease wait, this might take a while.." />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:elevation="8dp"
+        android:src="@drawable/logo" />
+</RelativeLayout>

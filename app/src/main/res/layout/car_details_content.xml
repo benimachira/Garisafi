@@ -1,0 +1,753 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager_ad_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bmw X6"
+                            android:textColor="@color/black"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:id="@+id/dt_make"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/dt_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:text="Ksh 3,000,000"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/roboto_bold"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/linear_negotiable"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Negotiable"
+                            android:id="@+id/et_negotiable"
+                            android:gravity="bottom"
+                            android:fontFamily="@font/roboto_medium"
+
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/colorAccentLight"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/linear_installment"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Installments Allowed"
+                            android:textColor="@color/colorAccentLight"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:id="@+id/dt_installments"
+                            android:textSize="14sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2017"
+                            android:textSize="14sp"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:fontFamily="@font/roboto_medium"
+                            android:id="@+id/dt_year"
+                            android:textColor="@color/font_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="city"
+                            android:id="@+id/dt_city"
+                            android:layout_gravity="bottom"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/font_color"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/roboto_medium"/>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="11sp"
+                android:id="@+id/posted_by"
+                android:background="@color/white"
+                android:textColor="@color/font_color"
+                android:padding="5dp"
+                android:text=""
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="1dp"
+            android:layout_marginBottom="5dp"
+            card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+            android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="54dp"
+                android:src="@drawable/enquire"
+                android:onClick="make_enquiries"
+                android:background="@drawable/my_round_button"
+                android:layout_height="54dp" />
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+                <ImageButton
+                    android:layout_width="54dp"
+                    android:src="@drawable/ic_phone"
+                    android:onClick="contact_seller"
+                    android:background="@drawable/my_round_button"
+                    android:layout_height="54dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+
+                <ImageButton
+                    android:layout_width="54dp"
+                    android:id="@+id/bt_likes"
+                    android:onClick="like_a_car"
+                    android:src="@drawable/favorite_border"
+                    android:background="@drawable/my_round_button"
+                    android:layout_height="54dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+
+                <ImageButton
+                    android:layout_width="54dp"
+                    android:src="@drawable/share"
+                    android:onClick="share_this_car"
+                    android:background="@drawable/my_round_button"
+                    android:layout_height="54dp" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra Details"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="petro"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/dt_fuel_type"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2000 Cc"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/et_engine_size"
+                    android:textColor="@color/font_color"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/roboto_medium"
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4km"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/dt_mileage"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Automatic"
+                        android:layout_marginBottom="10dp"
+                        android:id="@+id/et_transmission"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Condition"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/et_condition"
+                    android:textColor="@color/font_color"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/roboto_medium"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_mechanic"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:src="@drawable/checkmark"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:layout_height="20dp" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mechanic inspection"
+                        android:id="@+id/et_mechanic_inspection"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_car_history"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:src="@drawable/checkmark"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Car history"
+                        android:id="@+id/et_car_history"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+
+                </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/linear_test_drive"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:src="@drawable/checkmark"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Test drive"
+                        android:id="@+id/et_test_drive"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_duty_paid"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:src="@drawable/checkmark"
+                        android:scaleType="centerCrop"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:layout_height="20dp"
+                        android:fontFamily="@font/roboto_medium"/>
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Duty paid"
+                        android:id="@+id/et_duty_paid"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Car Features"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerview_features"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardElevation="1dp"
+            android:layout_marginBottom="5dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:layout_width="54dp"
+                        android:src="@drawable/enquire"
+                        android:onClick="make_enquiries"
+                        android:background="@drawable/my_round_button"
+                        android:layout_height="54dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+                    <ImageButton
+                        android:layout_width="54dp"
+                        android:src="@drawable/ic_phone"
+                        android:onClick="contact_seller"
+                        android:background="@drawable/my_round_button"
+                        android:layout_height="54dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+
+                    <ImageButton
+                        android:layout_width="54dp"
+                        android:id="@+id/bt_likes_2"
+                        android:onClick="like_a_car"
+                        android:src="@drawable/favorite_border"
+                        android:background="@drawable/my_round_button"
+                        android:layout_height="54dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+
+                    <ImageButton
+                        android:layout_width="54dp"
+                        android:src="@drawable/share"
+                        android:onClick="share_this_car"
+                        android:background="@drawable/my_round_button"
+                        android:layout_height="54dp" />
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:gravity="center"
+                            android:text="@string/bad_ad"
+                            android:textSize="11sp"
+                            android:onClick="report_ad"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginRight="2dp"
+                            android:textColor="@color/colorAccent"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/roboto_regular"
+                            android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:padding="5dp"-->
+            <!--card_view:cardCornerRadius="2dp"-->
+            <!--card_view:cardElevation="4dp"-->
+            <!--card_view:cardUseCompatPadding="true">-->
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:orientation="vertical"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:paddingTop="5dp"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--card_view:cardCornerRadius="4dp"-->
+                    <!--card_view:cardElevation="8dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--card_view:cardUseCompatPadding="true">-->
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:background="@color/button_green"-->
+                        <!--android:onClick="report_ad"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:layout_height="45dp">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="45dp"-->
+                            <!--android:background="@drawable/my_round_image"-->
+                            <!--android:layout_marginLeft="1dp"-->
+                            <!--android:padding="8dp"-->
+                            <!--android:src="@drawable/error"-->
+                            <!--android:layout_height="42dp" />-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:gravity="center"-->
+                            <!--android:text="Report this ad"-->
+                            <!--android:textSize="11sp"-->
+                            <!--android:layout_marginLeft="3dp"-->
+                            <!--android:layout_marginRight="2dp"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:fontFamily="@font/roboto_regular"-->
+                            <!--android:layout_height="wrap_content" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                <!--</android.support.v7.widget.CardView>-->
+
+            <!--</LinearLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+        <!---->
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@android:color/background_light"
+    tools:context=".controllers.SellMyCarActivity"
+    android:fitsSystemWindows="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="3dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Car Information"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:textStyle="bold"
+                                android:textSize="13sp"
+                                android:text="Car Condition:"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content" />
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinner_condition"
+                                android:layout_marginBottom="15dp"
+                                android:spinnerMode="dropdown" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="10dp"
+                                android:textStyle="bold"
+                                android:textSize="13dp"
+                                android:text="Contact Method:"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content" />
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spinner_exterior_color"
+                                android:layout_marginBottom="30dp"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="5dp">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="More details"
+                        android:gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="match_parent">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="wrap_content">
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="20dp"
+                                android:hint="Price"
+                                android:maxLength="10"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="5dp"
+                                android:id="@+id/et_price"
+                                android:textSize="14sp"
+                                android:textColor="@color/font_color"
+                                android:layout_marginRight="5dp"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:layout_height="wrap_content" >
+
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_marginBottom="20dp"
+                                android:hint="Mileage"
+                                android:id="@+id/et_mileage"
+                                android:maxLength="10"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="5dp"
+                                android:textSize="14sp"
+                                android:textColor="@color/font_color"
+                                android:layout_marginRight="5dp"
+                                android:layout_height="wrap_content" />
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="5dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="2"
+                                android:layout_height="match_parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:layout_height="match_parent">
+                                    <CheckBox
+                                        android:id="@+id/checkBox_installments"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/font_color"
+                                        android:text="Installments Allowed" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox_mechanic"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/font_color"
+                                        android:text="Mechanic Inspection Allowed" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox_history"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/font_color"
+                                        android:text="Car history available" />
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1"
+                                    android:padding="5dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_height="match_parent">
+                                    <CheckBox
+                                        android:id="@+id/checkBox_negotiable"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:textColor="@color/font_color"
+                                        android:text="Negotiable" />
+                                    <CheckBox
+                                        android:id="@+id/checkBox_testdrive"
+                                        android:layout_width="wrap_content"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/font_color"
+                                        android:text="Test Drive Allowed" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="3dp"
+                card_view:cardBackgroundColor="@android:color/white"
+                card_view:cardCornerRadius="2dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:padding="10dp">
+
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:text="Update"
+                                android:onClick="upload_car"
+                                android:id="@+id/button_button"
+                                android:textSize="14sp"
+                                android:layout_margin="10dp"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/roboto_regular"
+                                android:background="@drawable/my_button_bg"
+                                android:layout_height="40dp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>

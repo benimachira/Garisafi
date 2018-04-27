@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="settings"
+        android:id="@+id/refresh"
+        />
+    <!--<item-->
+        <!--android:id="@+id/log_out"-->
+        <!--android:title="log out"-->
+        <!--/>-->
+
+    <item android:id="@+id/menu_search"
+        android:icon="@drawable/search_tool_bar"
+        android:title="search"
+        app:showAsAction="always" />
+
+
+</menu>

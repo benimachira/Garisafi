@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    tools:context=".controllers.SellMyCarActivity"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle details"
+                    android:gravity="center"
+                    android:id="@+id/lable_car_info"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_make_sell"
+                            android:layout_marginBottom="25dp"
+                            android:spinnerMode="dropdown" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_year"
+                            android:layout_marginBottom="25dp"
+                            android:spinnerMode="dropdown" />
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_transimition"
+                            android:layout_marginBottom="25dp"
+                            android:spinnerMode="dropdown" />
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_location"
+                            android:layout_marginBottom="30dp"
+                            android:spinnerMode="dropdown" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_model_sell"
+                            android:layout_marginBottom="25dp"
+
+                            android:spinnerMode="dropdown" />
+
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_fuel"
+                            android:layout_marginBottom="25dp"
+                            android:spinnerMode="dropdown" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_condition"
+                            android:layout_marginBottom="25dp"
+                            android:spinnerMode="dropdown" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner_exterior_color"
+                            android:layout_marginBottom="30dp"
+                            android:spinnerMode="dropdown" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner_body_type"
+                    android:gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:spinnerMode="dropdown" />
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Additional information"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/lable_more_details"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        android:layout_marginBottom="40dp"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent">
+
+                            <android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <EditText
+                                    android:layout_width="match_parent"
+                                    android:hint="Price"
+                                    android:maxLength="10"
+                                    android:fontFamily="@font/roboto_medium"
+                                    android:textColor="@color/font_color"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="5dp"
+                                    android:id="@+id/et_price"
+                                    android:layout_marginRight="5dp"
+                                    android:textSize="14sp"
+                                    android:layout_height="wrap_content" />
+                            </android.support.design.widget.TextInputLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:gravity="bottom"
+                            android:layout_marginLeft="5dp"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox_duty_paid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/font_color"
+                                android:fontFamily="@font/roboto_regular"
+                                android:text="Duty paid" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content" >
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:hint="Mileage"
+                            android:id="@+id/et_mileage"
+                            android:maxLength="10"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/font_color"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content" >
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="20dp"
+                            android:hint="Engine size in cc"
+                            android:id="@+id/et_engine_size"
+                            android:maxLength="5"
+                            android:fontFamily="@font/roboto_medium"
+                            android:textColor="@color/font_color"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="14sp"
+                            android:layout_height="wrap_content" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:id="@+id/checkBox_installments"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/font_color"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Installments allowed" />
+                                <CheckBox
+                                    android:id="@+id/checkBox_mechanic"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/font_color"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="Mechanic inspection allowed" />
+                                <CheckBox
+                                    android:id="@+id/checkBox_history"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/font_color"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="Car history available" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_height="match_parent">
+                                <CheckBox
+                                    android:id="@+id/checkBox_negotiable"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/font_color"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="Negotiable" />
+                                <CheckBox
+                                    android:id="@+id/checkBox_testdrive"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:textColor="@color/font_color"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto_regular"
+                                    android:text="Test drive allowed" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Unique features"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/lable_features"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold" />
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seats"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_1_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/font_color"
+                            android:layout_marginBottom="10dp"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_1_2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_1_3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_1_4"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_1_5"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Safety"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_2_1"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_4"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_5"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_6"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_2_7"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_2_8"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_2_9"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_10"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_2_11"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Windows"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_3_2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_3_3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Others"
+                    android:gravity="left"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/font_color"
+                            android:layout_marginBottom="10dp"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_4"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_4_5"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_6"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+                        <CheckBox
+                            android:id="@+id/checkBox_4_7"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_8"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_4_9"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_4_10"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                        <CheckBox
+                            android:id="@+id/checkBox_4_11"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+                        <CheckBox
+                            android:id="@+id/checkBox_4_12"
+                            android:layout_width="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:textColor="@color/font_color"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Upload photos of your vehicle"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:id="@+id/lable_select_image"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold" />
+
+                <ke.co.wonderkid.garisafi.controllers.MyGridView
+                    android:id="@+id/gv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lable_select_image"
+                    android:numColumns="2" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/gv"
+                    android:layout_margin="30dp"
+                    android:textSize="14sp"
+                    android:background="@drawable/my_button_bg"
+                    android:textColor="@color/white"
+                    android:id="@+id/btn_select_images"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:onClick="select_photos"
+                    android:text="Select Car Photos" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:padding="5dp"
+            android:id="@+id/user_details_card"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardMaxElevation="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact information"
+                    android:gravity="center"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    android:id="@+id/your_details"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textStyle="bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/signup_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,_,@,., "
+                        android:drawableLeft="@drawable/user_login"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Name/Company name"
+                        android:inputType="text"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/font_color"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/signup_phone_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:drawablePadding="15dp"
+                        android:drawableTint="@color/colorPrimary"
+                        android:hint="Mobile number"
+                        android:digits="0,1,2,3,4,5,6,7,8,9"
+                        android:inputType="phone"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/font_color"
+                        android:maxLength="13"
+                        android:maxLines="1"
+                        android:paddingLeft="5dp"
+                        android:textSize="14sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:maxLines="1"
+                        android:id="@+id/signup_email"
+                        android:drawableLeft="@drawable/ic_message"
+                        android:drawableTint="@color/colorPrimary"
+                        android:digits="0,1,2,3,4,5,6,7,8,9,ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,_,@,."
+                        android:hint="Email address"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textColor="@color/font_color"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="5dp"
+                        android:drawablePadding="15dp" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="3dp"
+            card_view:cardBackgroundColor="@android:color/white"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:text="Preview Ad"
+                            android:onClick="preview_ad"
+                            android:id="@+id/btn_preview"
+                            android:textSize="14sp"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:textColor="@color/white"
+                            android:background="@drawable/my_button_bg"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent">
+                        <Button
+                            android:layout_width="match_parent"
+                            android:text="Upload"
+                            android:onClick="upload_car"
+                            android:id="@+id/bt_upload"
+                            android:textSize="14sp"
+                            android:textColor="@color/white"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/roboto_regular"
+                            android:background="@drawable/my_button_bg"
+                            android:layout_height="40dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

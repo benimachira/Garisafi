@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ke.co.wonderkid.garisafi">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DesignDemo">
+        <activity
+            android:name=".controllers.WelcomeActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controllers.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.UserProfile"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.Userlogin"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.CarDetails"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.SellMyCarActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.MyAdsActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyContentTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".utils.smsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".controllers.ResetPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_reset_password"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.Search_Activity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.EnquiriesAllActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyContentTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.EnquiriesBuyersActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyContentTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.EnquiriesChatsActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/Theme.MyContentTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.SearchResultActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.MyLikesActivity"
+            android:theme="@style/Theme.MyContentTheme"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.EditMyAdActivity"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".controllers.ExpandedImage"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name=".controllers.LoginChoice"
+            android:label=""
+            android:theme="@style/Theme.DesignDemo"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+
+
+        <item
+            android:id="@+id/sell_my_car"
+            android:icon="@drawable/sellcar"
+            android:title="Post advert" />
+
+
+        <item
+            android:id="@+id/my_ads"
+            android:icon="@drawable/advertising"
+            android:title="My adverts" />
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/user"
+            android:title="Account details" />
+
+        <item
+            android:id="@+id/enquiries"
+            android:icon="@drawable/chat"
+            android:title="Enquiries" />
+
+        <item
+            android:id="@+id/my_likes"
+            android:icon="@drawable/favorite"
+            android:title="My likes" />
+
+        <item
+            android:icon="@drawable/price"
+            android:title="Payments" />
+
+
+    </group>
+
+    <item android:title="Sub menu">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_event"
+                android:title="Log in" />
+
+            <item
+                android:icon="@drawable/about"
+                android:title="About Garisafi.com" />
+
+        </menu>
+    </item>
+
+</menu>
